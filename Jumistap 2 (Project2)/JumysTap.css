@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.container-head {
+    width: 100%;
+    padding: 12px 80px;
+}
+
+.container {
+    max-width: 1800px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > .container {
+    padding: 15px 0;
+}
+
+header .container .menu a {
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 500;
+    margin: 16px;
+    text-decoration: none;
+}
+
+header .container .menu a:hover,
+header .container .menu a.active {
+    color: black;
+    font-weight: 500;
+}
+
+.btn-h {
+    background-color: #081E341F;
+    color: #000000;
+    border: 0;
+    border-radius: 100px;
+    font-size: 1rem;
+    padding: 10px 12px;
+    width: fit-content;
+    gap: 8px;
+}
+
+.logo {
+    width: 114.68px;
+    height: 22px;
+    display: flex;
+    gap: 10px;
+}
+
+.logo p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.wrap {
+    background-color: #F1F1F1;
+}
+
+.main-content {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #712FFF;
+    color: white;
+    border: 0;
+    border-radius: 100px;
+    font-size: 1rem;
+    padding: 16px 24px;
+    width: fit-content;
+}
+
+.page1, .page4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 100px 80px;
+    gap: 80px;
+}
+
+.page1 .photo, .page4 .photo {
+    flex: 1;
+}
+
+.text, .text4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.text h1, .text4 h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 64px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.text p, .text4 p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.page2 {
+    display: flex;
+    height: auto;
+    width: 100%;
+    background: #E1DEE7;
+    border-radius: 32px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 80px;
+    gap: 86px;
+}
+
+.hiw h1 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.hiw p {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.otth {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 1.5rem;
+}
+
+.info p {
+    font-size: 1rem;
+}
+
+.page3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding: 0 80px;
+}
+
+.lgs {
+    gap: 32px;
+    padding: 100px 0;
+    width: 100%;
+}
+
+.lgs h1 {
+    display: flex;
+    font-size: 3rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.lgs p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.search form {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.search input[type="text"] {
+    flex: 1;
+    height: 50px;
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 80px;
+    background-color: #f9f9f9;
+    color: #838d99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-links .social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.madewith {
+    margin-top: 5px;
+    text-align: right;
+    font-weight: 500;
+    color: #000000;
+}
+
+.credits {
+    color: #838d99;
+    text-decoration: none;
+    font-weight: 500; 
+}
+
+.credits a {
+    color: #838d99;
+    text-decoration: none;
+    font-weight: 500; 
+}
+
+.mobile-menu {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; 
+    }
+
+    .mobile-menu {
+        display: flex; 
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .logo {
+        margin-right: 130px;
+    }
+
+    .container-head {
+        padding: 12px 20px;
+        flex-direction: column; 
+        align-items: space-between;
+        justify-content: space-between;
+    }
+
+    .page1, .page2, .page3, .page4 {
+        flex-direction: column; 
+        padding: 50px 20px;
+    }
+
+    .page1 .photo, .page4 .photo {
+        width: 100%; 
+    }
+
+    .page1 .text, .page4 .text4 {
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .page3 .lgs h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-left: 27%; 
+        margin-bottom: 4%;
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .page3 .lgs {
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .page3 {
+        gap: 0px;
+    }
+
+    .search form {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        padding-bottom: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page3 .btn {
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page4 .text4 h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto; 
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 8%;
+        justify-content: space-between;
+    }
+
+    .footer-links a {
+        margin: 12px 0;
+    }
+
+    .madewith {
+        margin-top: 5px;
+        text-align: right;
+        font-weight: 500;
+        color: #000000;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 6%;
+    }
+
+    .credits {
+        color: #838d99;
+        text-decoration: none;
+        font-weight: 500; 
+        justify-content: center;
+        margin-left: 8%;
+    }
+
+    .credits a {
+        color: #838d99;
+        text-decoration: none;
+        font-weight: 500; 
+    }
+}
