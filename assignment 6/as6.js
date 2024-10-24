@@ -1,4 +1,4 @@
-// task 1: Удаление текста
+// task 1
 const button = document.getElementById('button');
 const text = document.getElementById('text');
 
@@ -6,13 +6,13 @@ button.addEventListener('click', () => {
     text.style.display = 'none';
 });
 
-// task 2: Определение обработчика событий
+// task 2
 // button.addEventListener("click", () => alert("1"));
 // button.removeEventListener("click", () => alert("1"));
 // button.onclick = () => alert(2);
 // Запустится onclick, и при клике будет выведено "2"
 
-// task 3: Закрытие сообщений
+// task 3
 const messages = document.querySelectorAll('.message');
 
 messages.forEach(message => {
@@ -25,7 +25,7 @@ messages.forEach(message => {
     message.appendChild(closeButton);
 });
 
-// Menu toggle
+// Menu
 function toggleMenu(event) {
     const menu = event.currentTarget; 
     menu.classList.toggle('open'); 
