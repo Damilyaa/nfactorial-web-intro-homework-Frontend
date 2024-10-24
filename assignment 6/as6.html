@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" type="text/css" href="as6.css" />
+</head>
+<body>
+
+    <div class="message">Lalalalalala</div>
+    <div class="message">Rararararara</div>
+    <div class="message">Babababababa</div>
+
+    <div class="menu" onclick="toggleMenu(event)">
+        <span class="title">Click!</span>
+        <ul>
+            <li>Hello</li>
+            <li>How are you</li>
+            <li>Bye</li>
+        </ul>
+    </div>
+
+    <div class="carousel">
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <div class="carousel-container">
+            <ul id="imageList">
+                <li><img src="image1.jpg" alt="Изображение 1"></li>
+                <li><img src="image2.jpg" alt="Изображение 2"></li>
+                <li><img src="image3.jpg" alt="Изображение 3"></li>
+                <li><img src="image4.jpg" alt="Изображение 4"></li>
+            </ul>
+        </div>
+        <button class="next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+
+    <div class="remove">
+        <button id="button" class="btn">Remove</button>
+        <div id="text">Remove me</div>
+    </div>
+    <script src="as6.js"></script>
+</body>
+</html>

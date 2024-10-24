@@ -1,0 +1,113 @@
+.remove {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+#text {
+    margin-left: 10px; 
+}
+
+.message {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 32px;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    background: rgb(230, 164, 222);
+    border-radius: 15px;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+.btn {
+    border-radius: 19px;
+    background: rgb(230, 164, 222);
+    color: white;
+    border: 1px solid white; 
+}
+
+.menu {
+    border: solid rgb(255, 255, 255) 1px;
+    display: inline-block;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 20px;
+    display: none; 
+}
+
+.menu.open ul {
+    display: block; 
+}
+
+.menu .title {
+    cursor: pointer; 
+}
+
+.menu .title::before {
+    content: '▶ '; 
+    font-size: 80%;
+    color: rgb(230, 164, 222);
+}
+
+.menu.open .title::before {
+    content: '▼ '; 
+}
+
+.carousel {
+    padding-top: 30px;
+    position: relative;
+    width: 300px; 
+    overflow: hidden; 
+    margin: auto; 
+}
+
+.carousel-container {
+    display: flex; 
+}
+
+.carousel ul {
+    display: flex; 
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease; 
+}
+
+.carousel li {
+    display: inline-block; 
+}
+
+.carousel img {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+
+button {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    left: 10px; 
+}
+
+.next {
+    right: 10px; 
+}
